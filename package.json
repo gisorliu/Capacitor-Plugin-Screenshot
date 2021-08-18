@@ -1,7 +1,7 @@
 {
-  "name": "yarn",
-  "version": "0.0.1",
-  "description": "Screenshot plugin of Capacitor on android and IOS",
+  "name": "capacitor-plugin-screenshot",
+  "version": "0.0.5",
+  "description": "Screenshot pulgin of capacitor for Android&IOS",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -11,16 +11,16 @@
     "android/build.gradle",
     "dist/",
     "ios/Plugin/",
-    "Yarn.podspec"
+    "CapacitorPluginScreenshot.podspec"
   ],
   "author": "gisorliu",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gisorliu/Capacitor-Plugin-Screenshot.git"
+    "url": "git+https://github.com/gisorliu/Capacitor-Plugin-Screenshot.git.git"
   },
   "bugs": {
-    "url": "https://github.com/gisorliu/Capacitor-Plugin-Screenshot/issues"
+    "url": "https://github.com/gisorliu/Capacitor-Plugin-Screenshot.git/issues"
   },
   "keywords": [
     "capacitor",

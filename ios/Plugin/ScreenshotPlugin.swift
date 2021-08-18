@@ -7,12 +7,13 @@ import Capacitor
  */
 @objc(ScreenshotPlugin)
 public class ScreenshotPlugin: CAPPlugin {
-    private let implementation = Screenshot()
+//    private let implementation = Screenshot()
 
     @objc func echo(_ call: CAPPluginCall) {
-        let value = call.getString("value") ?? ""
-        call.resolve([
-            "value": implementation.echo(value)
-        ])
+                let implementation = Screenshot(vController: (bridge?.viewController)!)
+                let value = call.getString("value") ?? ""
+                call.resolve([
+                    "value": "data:image/jpeg;base64," + implementation.echo(value)
+                ])
     }
 }
